@@ -84,7 +84,7 @@ h2{font-size:clamp(2rem,4vw,3rem)}
 .area:hover::after{width:100%}
 .area .icon{width:54px;height:54px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);margin-bottom:22px}
 .area .icon svg{width:26px;height:26px}
-.area .num{position:absolute;right:24px;top:18px;font-family:"Cormorant Garamond";font-size:3rem;color:rgba(201,162,77,.12)}
+.area .num{position:absolute;right:24px;top:18px;font-family:"Cormorant Garamond";font-size:2.6rem;color:var(--gold);opacity:.85}
 .area h3{font-size:1.65rem;margin-bottom:14px}
 .area ul{list-style:none}
 .area li{color:var(--muted);font-size:.88rem;padding:8px 0 8px 18px;border-bottom:1px solid rgba(255,255,255,.05);position:relative}
@@ -140,6 +140,13 @@ footer .logo{justify-content:center;margin-bottom:14px}
   form{padding:24px}
   .cta{background-attachment:scroll}
 }
+.area p{color:var(--muted);font-size:.95rem}
+.areas-sub{color:var(--muted);max-width:560px;margin:-8px auto 0}
+.areas-grid{grid-template-columns:repeat(6,1fr)}
+.area{grid-column:span 2}
+.area:nth-child(4){grid-column:2 / span 2}
+@media (max-width:960px){.areas-grid{grid-template-columns:1fr 1fr}.area,.area:nth-child(4){grid-column:auto}.area:nth-child(5){grid-column:1 / -1}}
+@media (max-width:600px){.areas-grid{grid-template-columns:1fr}.area:nth-child(5){grid-column:auto}}
 </style>
 </head>
 <body>
@@ -182,7 +189,7 @@ footer .logo{justify-content:center;margin-bottom:14px}
 
 <div class="stats">
   <div class="container">
-    <div class="stat"><strong>6</strong><span>Áreas do Direito</span></div>
+    <div class="stat"><strong>5</strong><span>Áreas do Direito</span></div>
     <div class="stat"><strong>100%</strong><span>Dedicação</span></div>
     <div class="stat"><strong>24h</strong><span>Retorno ao Cliente</span></div>
     <div class="stat"><strong>Online</strong><span>e Presencial</span></div>
@@ -215,86 +222,43 @@ footer .logo{justify-content:center;margin-bottom:14px}
       <span class="eyebrow">Especialidades</span>
       <h2>Áreas de Atuação</h2>
       <div class="divider"></div>
+      <p class="areas-sub">Atuação jurídica técnica e comprometida com a defesa dos seus direitos.</p>
     </div>
     <div class="areas-grid">
-
       <article class="area reveal">
         <span class="num">01</span>
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 10l9-6 9 6M5 10v9h14v-9M9 19v-5h6v5"/></svg></div>
-        <h3>Direito Civil</h3>
-        <ul>
-          <li><b>Família</b> — casamento, divórcio, guarda, alimentos</li>
-          <li><b>Sucessões</b> — herança, inventário, testamento</li>
-          <li><b>Obrigações</b> — contratos, responsabilidade civil</li>
-          <li><b>Direitos Reais</b> — propriedade, posse, usucapião</li>
-          <li><b>Direito do Consumidor</b></li>
-        </ul>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 10h16M12 3l9 5H3zM6 10v11M10 10v11M14 10v11M18 10v11"/></svg></div>
+        <h3>Direito Previdenciário</h3>
+        <p>BPC/LOAS, aposentadorias, benefícios por incapacidade, pensão por morte e salário-maternidade.</p>
       </article>
 
       <article class="area reveal">
         <span class="num">02</span>
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5 21h14M6 7h12M6 7l-3 7a3 3 0 006 0zM18 7l-3 7a3 3 0 006 0z"/></svg></div>
-        <h3>Direito Penal</h3>
-        <ul>
-          <li><b>Crimes contra a vida</b> — homicídio, aborto</li>
-          <li><b>Contra o patrimônio</b> — furto, roubo, estelionato</li>
-          <li><b>Contra a honra</b> — calúnia, injúria, difamação</li>
-          <li><b>Contra a administração pública</b> — corrupção, peculato</li>
-          <li><b>Execução Penal</b></li>
-        </ul>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Direito Criminal</h3>
+        <p>Defesa criminal, acompanhamento em delegacias, processos criminais e execução penal.</p>
       </article>
 
       <article class="area reveal">
         <span class="num">03</span>
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 3h8l4 4v14H7zM15 3v4h4M10 12h6M10 16h6"/></svg></div>
-        <h3>Direito Processual</h3>
-        <ul>
-          <li><b>Processo Civil</b> — família, contratos, cobranças</li>
-          <li><b>Processo Penal</b> — procedimentos, defesa, recursos</li>
-          <li><b>Processo Trabalhista</b> — reclamações trabalhistas</li>
-          <li><b>Processo Administrativo</b> — defesas perante o Estado</li>
-        </ul>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 21h14M6 7h12M6 7l-3 7a3 3 0 006 0zM18 7l-3 7a3 3 0 006 0z"/></svg></div>
+        <h3>Direito do Consumidor</h3>
+        <p>Negativação indevida, cobranças abusivas, fraudes, contratos e indenizações.</p>
       </article>
 
       <article class="area reveal">
         <span class="num">04</span>
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="13"/><path d="M8 7V4h8v3M3 12h18"/></svg></div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3M3 12h18"/></svg></div>
         <h3>Direito Trabalhista</h3>
-        <ul>
-          <li><b>Relação de emprego</b> — contrato, jornada, rescisão</li>
-          <li><b>Direitos coletivos</b> — sindicatos, convenções</li>
-          <li><b>Acidente de trabalho</b> e doenças ocupacionais</li>
-          <li><b>Verbas rescisórias</b> e FGTS</li>
-          <li><b>Justiça do Trabalho</b></li>
-        </ul>
+        <p>Verbas rescisórias, reconhecimento de vínculo, estabilidade, horas extras e rescisão indireta.</p>
       </article>
 
       <article class="area reveal">
         <span class="num">05</span>
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-7-11a4 4 0 017-2.6A4 4 0 0119 10c0 6.5-7 11-7 11z"/></svg></div>
-        <h3>Direito Previdenciário</h3>
-        <ul>
-          <li><b>Aposentadorias</b> — contribuição, idade, especial</li>
-          <li><b>Incapacidade</b> — auxílio-doença, invalidez</li>
-          <li><b>Pensão por morte</b></li>
-          <li><b>BPC/LOAS</b> — Benefício de Prestação Continuada</li>
-          <li><b>Revisões de benefícios</b></li>
-        </ul>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.5c3 0 6 1.8 6 5"/></svg></div>
+        <h3>Direito de Família</h3>
+        <p>Guarda, pensão alimentícia, divórcio e partilha de bens.</p>
       </article>
-
-      <article class="area reveal">
-        <span class="num">06</span>
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M4 10h16M12 3l9 5H3zM6 10v11M10 10v11M14 10v11M18 10v11"/></svg></div>
-        <h3>Direito Administrativo</h3>
-        <ul>
-          <li><b>Licitações</b> e contratos públicos</li>
-          <li><b>Concursos</b> e servidores públicos</li>
-          <li><b>Improbidade administrativa</b></li>
-          <li><b>Responsabilidade civil do Estado</b></li>
-          <li><b>Processos administrativos disciplinares</b></li>
-        </ul>
-      </article>
-
     </div>
   </div>
 </section>
@@ -341,8 +305,8 @@ footer .logo{justify-content:center;margin-bottom:14px}
       <input name="tel" placeholder="Telefone / WhatsApp" required>
       <select name="area" required>
         <option value="">Área do seu caso</option>
-        <option>Direito Civil</option><option>Direito Penal</option><option>Direito Processual</option>
-        <option>Direito Trabalhista</option><option>Direito Previdenciário</option><option>Direito Administrativo</option>
+        <option>Direito Previdenciário</option><option>Direito Criminal</option><option>Direito do Consumidor</option>
+        <option>Direito Trabalhista</option><option>Direito de Família</option><option>Outro assunto</option>
       </select>
       <textarea name="msg" placeholder="Conte brevemente o seu caso"></textarea>
       <button class="btn btn-gold" type="submit" style="justify-content:center;cursor:pointer">Enviar Mensagem</button>
